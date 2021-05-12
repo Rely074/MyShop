@@ -1,0 +1,67 @@
+.subscription {
+        
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        background-image: url(../img/subscribe.jpg);
+        height: 448px;
+        width: 1600px;
+        margin: 0 auto;
+    }
+
+    &__item{
+        @include flex-center();
+        flex-direction:column;
+    }
+
+    &__texts{
+        @include font(20px, 24px, 400, italic);
+    }
+
+    &__img {
+        margin: 0 0 30px
+    }
+
+    &__title {
+        @include font(24px, 38px, 700);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @include font(18px, 30px, 400);
+        padding: 0 0 32px 0;
+        text-transform: uppercase;
+    }
+
+    &__email {
+        height: 43px;
+        width: 256px;
+        border-radius: 0px;
+        margin: -5px;
+        background-color: $grey-light;
+        color: $grey-dark;
+        -webkit-border-top-left-radius: 20px;
+        -webkit-border-bottom-left-radius: 20px;
+        -moz-border-radius-topleft: 20px;
+        -moz-border-radius-bottomleft: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        }
+    
+    &__button {
+        height: 49px;
+        width: 100px;
+        left: 1173px;
+        top: 243px;
+        border-radius: 0px;
+        color: $white;
+        background-color: $dark-pink;
+        -webkit-border-top-right-radius: 20px;
+        -webkit-border-bottom-right-radius: 20px;
+        -moz-border-radius-topright: 20px;
+        -moz-border-radius-bottomright: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}

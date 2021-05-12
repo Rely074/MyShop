@@ -1,0 +1,18 @@
+.shopping {
+
+    min-height: 998px;
+    display: flex;
+
+    &__title {
+        @include font(24px, 29px, 400);
+        color: $dark-pink;
+        text-transform: uppercase;
+    }
+    
+    &__title-wrapper {
+        background-color: $pink;
+        min-height: 148px;
+        display: flex;
+        align-items: center;
+    }
+}

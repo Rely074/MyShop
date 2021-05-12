@@ -1,0 +1,94 @@
+.product {
+
+    &__title {
+        @include font(30px, 36px, 400);
+        color: $black;
+        text-align: center;
+    }
+    &__title-text {
+        @include font(14px, 17px, 400);
+        text-align: center;
+        color: $grey;
+        margin: 0 0 48px;
+    }
+    
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 0 191px;
+    }
+    &__item{
+        height: 581px;
+        width: 360px;
+        margin: 0 0 30px;
+    }  
+    
+    &__text {
+        background-color: $grey-light;
+        margin: -1px;
+    }
+    
+    &__title {
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 24px 0 12px 18px;
+    }
+    
+    &__desc { 
+        @include font(14px, 17px, 300);
+        color: $grey-dark;
+        padding: 0px 0 18px 18px;
+    }
+    
+    &__price {
+        @include font(16px, 19px, 400);
+        color: $red;
+        padding: 0px 0 18px 20px;
+    }
+    &__box {
+        position: relative;
+    }
+    
+    &__box:hover .product__img{
+        display: block;
+    }
+    
+    &__box:hover .product__button {
+        display: block;
+    }
+    
+    &__button {
+        @include font(14px, 17px, 400);
+        position: absolute;
+        top: 179px;
+        right: 105px;
+        height: 43px;
+        width: 138px;
+        border-radius: 0px;
+        background-color: Transparent;
+        color: $white;
+        display: none;
+    }
+    
+    &__button::before {
+        content: '';
+        width: 32px;
+        height: 29px;
+        position: absolute;
+        left: 2px;
+        top: 4px;
+        background-image: url(../img/cart.svg);
+    }
+    
+    &__button-browse{
+        @include font(16px, 19px, 400);
+        border: 1px solid #FF6A6A;
+        color: $red
+        background-color white;
+        margin: 63px 0 0 74px;
+        height: 47px;
+        width: 211px;
+    }
+}
