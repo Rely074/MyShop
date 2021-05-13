@@ -1,0 +1,29 @@
+.advantages {
+
+    &__content-color {
+        background-color: $black;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        min-height: 341px;
+        color: $white;
+        
+    }
+    
+    &__item {
+        @include flex-center();
+        flex-direction:column;
+    }
+    
+    &__title {
+        @include font(20px, 24px, 400);
+        padding: 28px 0 16px;
+    }
+    
+    &__text {
+        @include font(14px, 17px, 300);
+        color: $grey;
+    }
+}

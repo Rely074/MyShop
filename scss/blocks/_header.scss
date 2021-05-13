@@ -1,0 +1,53 @@
+
+.header{ 
+    background: $dark-blue;
+
+    &__wrapper {
+        @include flex-center-space-between();
+        min-height: 75px;
+    }
+        
+    &__navigation {
+        background-color: $white;
+        height: 765px;
+        width: 232px;
+        position: absolute;
+        right: 140px;
+        top: 75px;
+        display: none;
+    }
+        
+    &__navigation a {
+        @include font(14px, 17px, 400);
+        text-decoration: none;
+        color: $grey-dark;
+    }
+        
+    &__controls:hover .header__button-img{
+        display: block;
+    }
+        
+    &__controls:hover .header__navigation {
+        display: block;
+    }
+        
+    &__navigation:hover {
+        display: block;
+    }
+    
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 34px 0 0;
+        position: relative;
+    }
+        
+    &__person-link {
+        margin: 0 34px 0 0;
+    }
+        
+    &__logo {
+        margin: 0 10px 0 0;
+    }
+}
+    

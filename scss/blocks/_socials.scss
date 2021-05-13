@@ -1,0 +1,15 @@
+.socials {
+
+    .socials__list {
+        @include flex-center-space-between();
+        min-height: 79px;
+    }
+    
+    .socials__copy {
+        @include font(16px, 19px, 400);
+        color: $white;
+    }
+    .socials__color {
+        background-color: $black;
+    }
+}
