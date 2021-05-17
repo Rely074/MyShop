@@ -16,3 +16,33 @@
     font-weight: $weight;
     font-style: $style;
 }
+
+@mixin radius-right {
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@mixin radius-left {
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+@mixin tablet {
+    @media (max-width: $max-tablet-width) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $max-mobile-width) {
+        @content;
+    }
+}

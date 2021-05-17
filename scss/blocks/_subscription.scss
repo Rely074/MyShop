@@ -5,8 +5,18 @@
         justify-content: space-around;
         background-image: url(../img/subscribe.jpg);
         height: 448px;
-        width: 1600px;
+        width: 85%;
         margin: 0 auto;
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            width: 100%;
+            flex-direction: column;
+            min-height: 550px;
+        }
     }
 
     &__item{
@@ -41,12 +51,7 @@
         margin: -5px;
         background-color: $grey-light;
         color: $grey-dark;
-        -webkit-border-top-left-radius: 20px;
-        -webkit-border-bottom-left-radius: 20px;
-        -moz-border-radius-topleft: 20px;
-        -moz-border-radius-bottomleft: 20px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        @include radius-left();
         }
     
     &__button {
@@ -57,11 +62,11 @@
         border-radius: 0px;
         color: $white;
         background-color: $dark-pink;
-        -webkit-border-top-right-radius: 20px;
-        -webkit-border-bottom-right-radius: 20px;
-        -moz-border-radius-topright: 20px;
-        -moz-border-radius-bottomright: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        @include radius-right();
+    }
+
+    &__texts {
+        text-align: center;
+        width: 330px;
     }
 }

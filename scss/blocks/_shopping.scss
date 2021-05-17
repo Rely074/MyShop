@@ -15,4 +15,53 @@
         display: flex;
         align-items: center;
     }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card {
+        min-height: 306px;
+        width: 652px;
+        display: flex;
+        border: 1px solid rgb(19, 2, 2);
+    }
+
+    &__card-title {
+        @include font(24px, 29px, 400);
+        text-transform: uppercase;
+        padding: 22px 0 42px 31px;
+        width: 68%
+    }
+
+    &__card-item {
+        @include font(22px, 26px, 400);
+        color: $grey-dark;
+        padding: 0 0 6px 31px;
+    }
+
+    &__card1 {
+        margin: 96px 0 40px;
+
+    }
+
+    &__card2 {
+        margin: 40px 0 72px;
+    }
+
+    &__buttons-card {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__button {
+        @include font(14px, 17px, 300);
+        padding: 17px 41px 16px 39px;
+        background-color: $white;
+    }
+
+    &__card-price {
+        color: $red
+    }
 }

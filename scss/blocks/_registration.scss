@@ -1,5 +1,4 @@
 .registration {
-    
         min-height: 675px;
         display: flex;
 
@@ -64,5 +63,25 @@
         color: $grey;
         padding: 15px 0 39px 0;
     }
-    
+
+    &__items {
+        @include font(24px, 29px, 300);
+        margin: 21 0 0 0;
+        
+    }
+
+    &__items-text {
+        padding: 16px 0 0 40px;
+        position: relative;
+    }
+
+    &__items-text:before {
+        content: '';
+        width: 20px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 22px;
+        background-image: url(../img/check.png);
+    }
 }

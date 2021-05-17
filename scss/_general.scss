@@ -4,8 +4,9 @@ body {
 }
 
 .container {
-    width: 1138px;
+    width: 71%;
     margin: 0 auto;
+
 }
 
 .visually-hidden {
@@ -17,4 +18,16 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
+}
+
+@media (max-width: $max-tablet-width) {    
+    .container {
+        width: 96%;
+    } 
+}
+
+@media (max-width: $max-mobile-width) {    
+    .container {
+        width: 92%;
+    }
 }

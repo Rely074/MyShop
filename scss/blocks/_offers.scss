@@ -8,10 +8,21 @@
     
     &__item {
         @include flex-center();
-        width: 360px;
+        width: 31%;
         min-height: 260px;
         background-color: $brown;
+        background: cover;
         margin: 0 0 30px;
+
+        @include tablet {
+            min-height: 167px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 248px;
+        }
+
     }
     
     &__item--woman {
@@ -31,6 +42,14 @@
         width: 100%;
         margin: 0 0 97px;
         min-height: 180px;
+
+        @include tablet {
+            min-height: 116px;
+        }
+
+        @include mobile {
+            min-height: 111px;
+        }
     }
     
     &__item-text {
