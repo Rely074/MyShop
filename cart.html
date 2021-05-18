@@ -26,38 +26,38 @@
               <img  class = "header__button-img" src="./img/burger.svg" alt="burger" width="32" height="23" />
             </button>
             <a class = "header__person-link" href=".//registration.html"><img src="./img/registration.svg" alt="registration" width="29" height="29"/></a>
-            <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"/></a>
+            <a href="./cart.html"><img src="./img/cart.svg" alt="cart" width="32" height="29"/></a>
             <nav class="header__navigation">
-              <h2 class = "menu__title">menu</h2>
-              <ul class="menu">
+              <h2 class = "header__menu-title">menu</h2>
+              <ul class="header__menu-link">
                 <li>
-                  <h3 class="menu__subtitle">man</h3>
+                  <h3 class="header__menu-subtitle">man</h3>
                   <ul>
-                    <li class="menu__product"><a href="#">Accessories</a></li>
-                    <li class="menu__product"><a href="#">Bags</a></li>
-                    <li class="menu__product"><a href="#">Denim</a></li>
-                    <li class="menu__product"><a href="#">T-Shirts</a></li>
+                    <li class="header__menu-product"><a href="#">Accessories</a></li>
+                    <li class="header__menu-product"><a href="#">Bags</a></li>
+                    <li class="header__menu-product"><a href="#">Denim</a></li>
+                    <li class="header__menu-product"><a href="#">T-Shirts</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h3 class="menu__subtitle">woman</h3>
+                  <h3 class="header__menu-subtitle">woman</h3>
                   <ul>
-                    <li class="menu__product"><a href="#">Accessories</a></li>
-                    <li class="menu__product"><a href="#">Jackets & Coats</a></li>
-                    <li class="menu__product"><a href="#">Polos</a></li>
-                    <li class="menu__product"><a href="#">T-Shirts</a></li>
-                    <li class="menu__product"><a href="#">Shirts</a></li>
+                    <li class="header__menu-product"><a href="#">Accessories</a></li>
+                    <li class="header__menu-product"><a href="#">Jackets & Coats</a></li>
+                    <li class="header__menu-product"><a href="#">Polos</a></li>
+                    <li class="header__menu-product"><a href="#">T-Shirts</a></li>
+                    <li class="header__menu-product"><a href="#">Shirts</a></li>
                   </ul>
                 </li>
                 <li>
-                  <h3 class="menu__subtitle">kids</h3>
+                  <h3 class="header__menu-subtitle">kids</h3>
                   <ul>
-                    <li class="menu__product"><a href="#">Accessories</a></li>
-                    <li class="menu__product"><a href="#">Jackets & Coats</a></li>
-                    <li class="menu__product"><a href="#">Polos</a></li>
-                    <li class="menu__product"><a href="#">T-Shirts</a></li>
-                    <li class="menu__product"><a href="#">Shirts</a></li>
-                    <li class="menu__product"><a href="#">Bags</a></li>
+                    <li class="header__menu-product"><a href="#">Accessories</a></li>
+                    <li class="header__menu-product"><a href="#">Jackets & Coats</a></li>
+                    <li class="header__menu-product"><a href="#">Polos</a></li>
+                    <li class="header__menu-product"><a href="#">T-Shirts</a></li>
+                    <li class="header__menu-product"><a href="#">Shirts</a></li>
+                    <li class="header__menu-product"><a href="#">Bags</a></li>
                   </ul>
                 </li>
               </ul>
@@ -66,7 +66,7 @@
         </div>
       </div>
     </header>
-
+    
     <main>
       <section class="shopping__head">
         <div class="shopping__title-wrapper">
@@ -76,32 +76,55 @@
 
       <section class="shopping container">
         <div class = "shopping__cards">
-          <div class="shopping__card-first">
-
+          <div class="shopping__card shopping__card1">
+            <img class="shopping__card-first" src="./img/shopping-card1.jpg" alt="card-1" width="262" height="306">
+            <div>
+              <h3 class="shopping__card-title">mango  people  t-shirt</h3>
+              <ul class="shopping__card-list">
+                <li class="shopping__card-item"><span>Price:</span><span class="shopping__card-price"> $300</span></li>
+                <li class="shopping__card-item">Color: Red</li>
+                <li class="shopping__card-item">Size: Xl</li>
+                <li class="shopping__card-item">Quantity:</li>
+              </ul>
+            </div>
           </div>
-          <div class="shopping__card-second">
 
+          <div class="shopping__card shopping__card2">
+            <img class="shopping__card-second" src="./img/shopping-card2.jpg" alt="card-1" width="262" height="306">
+            <div>
+              <h3 class="shopping__card-title">mango  people  t-shirt</h3>
+              <ul class="shopping__card-list">
+                <li class="shopping__card-item"><span>Price:</span><span class="shopping__card-price"> $300</span></li>
+                <li class="shopping__card-item">Color: Red</li>
+                <li class="shopping__card-item">Size: Xl</li>
+                <li class="shopping__card-item">Quantity:</li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <button class = "shopping__button-clear" type="button">CLEAR SHOPPING CART</button>
-            <button class = "shopping__button-continue" type="button">CONTINUE SHOPPING</button>
+          <div class="shopping__buttons-card">
+            <button class = "shopping__button" type="button">CLEAR SHOPPING CART</button>
+            <button class = "shopping__button" type="button">CONTINUE SHOPPING</button>
           </div>
         </div>
 
-        <div class = "shipping">
-          <fieldset class="shipping__adress">
-            <legend>shipping adress</legend>
-            <input class="shipping__input " type="text" placeholder="Country">
-            <input class="shipping__input" type="text" placeholder="State">
-            <input class="shipping__input" type="text" placeholder="Postcode/Zip">
-            <button class = "shipping__button" type="button">GET A QUOTE</button>
-          </fieldset>
+        <section class = "shipping">
+          <h2 class="visually-hidden">Cart shipping</h2>
+          <form action="">
+            <fieldset class="shipping__adress">
+              <legend class="shipping__title">shipping adress</legend>
+              <input class="shipping__input " type="text" placeholder="Country">
+              <input class="shipping__input" type="text" placeholder="State">
+              <input class="shipping__input" type="text" placeholder="Postcode/Zip">
+              <button class = "shipping__button" type="button">GET A QUOTE</button>
+            </fieldset>
+          </form>
           <div class="shipping__process">
-            <span></span>
-            <span></span>
-            <button class = "shipping__button" type="button">PROCEED TO CHECKOUT</button>
+            <p class="shipping__text-sub">SUB TOTAL         $900</p>
+            <p class="shipping__text-grand">GRAND TOTAL     <span class="shipping__text-price">$900</span> </p>
+            <hr class = "shipiing__line">
+            <button class = "shipping__button-checkout" type="button">PROCEED TO CHECKOUT</button>
           </div>
-        </div>
+        </section>
       </section>
     </main>
 

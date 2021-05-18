@@ -5,6 +5,14 @@
         color: $black;
         text-align: center;
     }
+
+    &__title-card {
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 24px 0 12px 18px;
+    }
+    
     &__title-text {
         @include font(14px, 17px, 400);
         text-align: center;
@@ -27,13 +35,6 @@
     &__text {
         background-color: $grey-light;
         margin: -1px;
-    }
-    
-    &__title {
-        font-size: 13px;
-        line-height: 16px;
-        text-transform: uppercase;
-        padding: 24px 0 12px 18px;
     }
     
     &__desc { 
@@ -85,10 +86,14 @@
     &__button-browse{
         @include font(16px, 19px, 400);
         border: 1px solid #FF6A6A;
-        color: $red
-        background-color white;
+        color: $red;
+        background-color: $white;
         margin: 63px 0 0 74px;
         height: 47px;
         width: 211px;
+        
+        @include tablet {
+            margin: 72px 0 0 263px;
+        }
     }
 }

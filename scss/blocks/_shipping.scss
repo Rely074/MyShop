@@ -1,0 +1,71 @@
+.shipping {
+
+    .shipping__adress {
+        display: flex;
+        flex-direction: column;
+        margin: 96px 0 106px 128px; 
+    }
+
+    .shipping__title {
+        @include font(16px, 19px, 300);
+        text-transform: uppercase;
+        padding: 0 0 20px 0;
+    }
+
+    .shipping__input {
+        height: 45px;
+        width: 360px;
+        margin: 0 0 20px 0;
+        padding: 0px 0 0 16px;
+        color: $grey
+    }
+
+    .shipping__button {
+        @include font(11px, 13px, 300);
+        padding: 9.5px 14px 12px 15px; 
+        width: 107px;
+        background-color: $white;
+        color: $grey;
+        border: 1px solid $grey;
+    }
+
+    .shipping__process {
+        height: 214px;
+        width: 360px;
+        background-color: $pink-light;
+        margin: 0 0 0 128px;
+    }
+
+    .shipping__text-sub {
+        @include font(11px, 13px, 400);
+        text-align: right;
+        padding: 39px 34px 12px 0;
+    }
+
+    .shipping__text-grand {
+        @include font(16px, 19px, 300);
+        text-align: right;
+        padding: 0 34px 21px 0;
+    }
+
+    .shipping__button-checkout {
+        @include font(16px, 19px, 300);
+        background-color: $red;
+        height: 50px;
+        width: 273px;
+        color: $grey-light;
+        border: 0;
+        margin: 0 0 0 44px;
+    }
+
+    .shipiing__line {
+        width: 273px;
+        margin: 0 0 17px 44px;
+    }
+
+    .shipping__text-price {
+        color: $red;
+        font-weight: 700;
+    }
+
+}
