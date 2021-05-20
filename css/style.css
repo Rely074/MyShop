@@ -911,7 +911,7 @@ body {
   height: 50px;
   width: 273px;
   color: #E1E1E1;
-  border: 0;
+  border: none;
   margin: 0 0 0 44px;
 }
 
@@ -923,5 +923,68 @@ body {
 .shipping .shipping__text-price {
   color: #F16D7F;
   font-weight: 700;
+}
+
+.arrivals__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.arrivals__title-block {
+  background-color: #F1E4E6;
+  min-height: 148px;
+  align-items: center;
+  display: flex;
+}
+
+.arrivals__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrivals__navbar {
+  display: flex;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.arrivals__newtext {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  font-style: normal;
+  color: #F16D7F;
+  text-decoration: none;
+  padding: 0 0 0 4px;
+}
+
+.arrivals__link {
+  text-decoration: none;
+  padding: 0 3px 0 3px;
+  color: #5D5D5D;
+}
+
+.carousel {
+  background-color: #F7F7F7;
+  height: 777px;
+}
+
+.carousel__slide {
+  padding: 11px 489px 42px 514px;
+  width: 597px;
+  height: 724px;
+}
+
+.description__container {
+  border: 1px solid #9F9F9F;
+  min-height: 601px;
 }
 /*# sourceMappingURL=style.css.map */
