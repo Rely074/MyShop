@@ -1,7 +1,82 @@
 .description {
 
     &__container {
-    border: 1px solid $grey;
-    min-height: 601px;
+        border: 1px solid $grey;
+        min-height: 601px;
+        position: relative;
+        margin: -65px 0 129px 0;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+
+    &__title {
+        color: $red;
+        padding: 64px 0 0 0;
+        @include font(14px, 17px, 300);
+        text-align: center;
+    }
+
+    &__band-red {
+        width: 63px;
+        border: 3px solid $red-dark;
+        border-radius: 5px;
+    }
+
+    &__subtitle {
+        @include font(18px, 22px, 300);
+        text-align: center;
+        padding: 0 0 48px 0;
+    }
+
+    &__text {
+        @include font(14px, 17px, 300);
+        text-align: center;
+        color: $grey;
+        width: 554px;
+        padding: 0 0 32px 0;
+    }
+
+    &__price {
+        @include font(24px, 29px, 300);
+        color: $red;
+        padding: 0 0 55px 0;
+    }
+
+    &__band {
+        border: 1px solid $grey;
+        width: 641px;
+    }
+
+    &__list {
+        display: flex;
+        padding: 55px 0 48px 0;
+    }
+
+    &__item {
+        padding: 0 42px 0 0;
+        @include font(14px, 17px, 400);
+        color: $grey-dark;
+    }
+
+    // &__item::after {
+    //     content: '';
+    //     width: 32px;
+    //     height: 29px;
+    //     position: absolute;
+    //     left: 2px;
+    //     top: 4px;
+    //     background-image: url(../img/vectror.svg);
+    // }
+
+    &__button {
+        @include font(16px, 19px, 400);
+        color: $red;
+        padding: 14px 56px 13px 72px;
+        background-color: $white;
+        border: 1px solid $red;
+    }
+
+
 }

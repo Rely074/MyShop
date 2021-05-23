@@ -25,17 +25,23 @@
         text-transform: uppercase;
     }
 
-    &__newtext {
-        @include font(14px, 17px, 700);
-        color: $red;
-        text-decoration: none ;
-        padding: 0 0 0 4px;
-    }
-
     &__link {
-        text-decoration: none ;
+        text-decoration: none;
         padding: 0 3px 0 3px;
         color: $grey-dark;
+    }
+
+    &__link:hover {
+        @include font(14px, 17px, 700);
+        color: $red;
+        text-decoration: none;
+    }
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 0 128px 0;
     }
 
 }
