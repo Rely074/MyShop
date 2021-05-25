@@ -6,6 +6,17 @@
         padding: 11px 489px 42px 514px;
         width: 597px;
         height: 724px;
+        position: relative;
+    }
+
+    &__left {
+        background-color: #9F9F9F;
+        padding: 13px 13px 13px 13px;
+    }
+
+    &__right {
+        background-color: #9F9F9F;
+        padding: 13px 13px 13px 13px;
     }
 
     

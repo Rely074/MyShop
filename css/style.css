@@ -956,20 +956,26 @@ body {
   text-transform: uppercase;
 }
 
-.arrivals__newtext {
+.arrivals__link {
+  text-decoration: none;
+  padding: 0 3px 0 3px;
+  color: #5D5D5D;
+}
+
+.arrivals__link:hover {
   font-size: 14px;
   line-height: 17px;
   font-weight: 700;
   font-style: normal;
   color: #F16D7F;
   text-decoration: none;
-  padding: 0 0 0 4px;
 }
 
-.arrivals__link {
-  text-decoration: none;
-  padding: 0 3px 0 3px;
-  color: #5D5D5D;
+.arrivals__card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0 128px 0;
 }
 
 .carousel {
@@ -981,10 +987,112 @@ body {
   padding: 11px 489px 42px 514px;
   width: 597px;
   height: 724px;
+  position: relative;
+}
+
+.carousel__left {
+  background-color: #9F9F9F;
+  padding: 13px 13px 13px 13px;
+}
+
+.carousel__right {
+  background-color: #9F9F9F;
+  padding: 13px 13px 13px 13px;
 }
 
 .description__container {
   border: 1px solid #9F9F9F;
   min-height: 601px;
+  position: relative;
+  margin: -65px 0 129px 0;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description__title {
+  color: #F16D7F;
+  padding: 64px 0 0 0;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+
+.description__band-red {
+  width: 63px;
+  border: 3px solid #EF5B70;
+  border-radius: 5px;
+}
+
+.description__subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  padding: 0 0 48px 0;
+}
+
+.description__text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #9F9F9F;
+  width: 554px;
+  padding: 0 0 32px 0;
+}
+
+.description__price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F16D7F;
+  padding: 0 0 55px 0;
+}
+
+.description__band {
+  border: 1px solid #9F9F9F;
+  width: 641px;
+}
+
+.description__list {
+  display: flex;
+  padding: 55px 0 48px 0;
+}
+
+.description__item {
+  padding: 0 42px 0 0;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  color: #5D5D5D;
+}
+
+.description__item::after {
+  content: '';
+  width: 32px;
+  height: 29px;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  background-image: url(../img/vectror.svg);
+}
+
+.description__button {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F16D7F;
+  padding: 14px 56px 13px 72px;
+  background-color: #FFFFFF;
+  border: 1px solid #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */
