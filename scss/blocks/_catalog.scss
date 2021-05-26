@@ -1,0 +1,64 @@
+.catalog {
+
+    &__list {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: 30px;
+        margin: 0 0 188px 0;
+    }
+
+    &__head {
+        display: flex;
+        padding: 51px 0 65px 0;
+        align-items: center;
+    }
+
+    &__filter {
+        @include font(14px, 17px, 600);
+        width: 40%;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        @include font(14px, 17px, 400);
+        text-decoration: none;
+        padding: 0 5px 0 5px;
+        color: $grey-dark;
+    }
+
+    &__item {
+        min-height: 581px;
+        width: 360px;
+    }
+
+    &__text {
+        background-color: #E1E1E1;
+        margin: -2px;
+    }
+
+    &__title-card {
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        padding: 24px 0 12px 18px;
+    }
+
+    &__desc {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 300;
+        font-style: normal;
+        color: #5D5D5D;
+        padding: 0px 0 18px 18px;
+    }
+
+    &__price {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        font-style: normal;
+        color: #F16D7F;
+        padding: 0px 0 18px 20px;
+    }
+}

@@ -9,12 +9,10 @@
         justify-content: space-around;
         min-height: 341px;
         color: $white;
-
         @include tablet {
-            flex-direction: column;
-            min-height: 610px;
+        flex-direction: column;
+        min-height: 610px;
         }
-        
     }
     
     &__item {

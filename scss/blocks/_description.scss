@@ -60,16 +60,6 @@
         color: $grey-dark;
     }
 
-    // &__item::after {
-    //     content: '';
-    //     width: 32px;
-    //     height: 29px;
-    //     position: absolute;
-    //     left: 2px;
-    //     top: 4px;
-    //     background-image: url(../img/vectror.svg);
-    // }
-
     &__button {
         @include font(16px, 19px, 400);
         color: $red;
@@ -77,6 +67,4 @@
         background-color: $white;
         border: 1px solid $red;
     }
-
-
 }

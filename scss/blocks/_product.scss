@@ -12,54 +12,56 @@
         text-transform: uppercase;
         padding: 24px 0 12px 18px;
     }
-    
+
     &__title-text {
         @include font(14px, 17px, 400);
         text-align: center;
         color: $grey;
         margin: 0 0 48px;
     }
-    
+
     &__items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 0 191px;
     }
-    &__item{
+
+    &__item {
         height: 581px;
         width: 360px;
         margin: 0 0 30px;
-    }  
-    
+    }
+
     &__text {
         background-color: $grey-light;
-        margin: -1px;
+        margin: -2px;
     }
-    
-    &__desc { 
+
+    &__desc {
         @include font(14px, 17px, 300);
         color: $grey-dark;
         padding: 0px 0 18px 18px;
     }
-    
+
     &__price {
         @include font(16px, 19px, 400);
         color: $red;
         padding: 0px 0 18px 20px;
     }
+
     &__box {
         position: relative;
     }
-    
-    &__box:hover .product__img{
+
+    &__box:hover .product__img {
         display: block;
     }
-    
+
     &__box:hover .product__button {
         display: block;
     }
-    
+
     &__button {
         @include font(14px, 17px, 400);
         position: absolute;
@@ -72,7 +74,7 @@
         color: $white;
         display: none;
     }
-    
+
     &__button::before {
         content: '';
         width: 32px;
@@ -82,8 +84,8 @@
         top: 4px;
         background-image: url(../img/cart.svg);
     }
-    
-    &__button-browse{
+
+    &__button-browse {
         @include font(16px, 19px, 400);
         border: 1px solid #FF6A6A;
         color: $red;
@@ -91,7 +93,7 @@
         margin: 63px 0 0 74px;
         height: 47px;
         width: 211px;
-        
+
         @include tablet {
             margin: 72px 0 0 263px;
         }
